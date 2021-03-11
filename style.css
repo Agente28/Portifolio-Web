@@ -1,0 +1,98 @@
+* {
+    box-sizing: border-box;
+}
+
+
+:root{
+
+    font-family: sans-serif;
+    --color-blues: #0085ff;
+}
+
+body {
+    margin: 0;
+
+}
+
+h1{
+    
+    margin: 0;
+    text-shadow: 0 4px 4px #0044;
+    width: 15,5ch;
+
+}
+
+.header {
+    /* VH = view port high. referente ao tamanho e altura total da tela  */ /* VW = view port width. referente ao largura total da tela  */
+    height: 50vh; 
+    background: linear-gradient(to right bottom,#b721ff,#1e90ff);
+    color: #fff;
+    display: grid;
+    place-items: center;
+    box-shadow: 0 4px 4px #0044;
+    text-align: center;
+}
+
+
+/*ELEMENTOS */
+
+
+/* Quando quiser usar stylizar e manipular  um elemento no body, ha tres tipos de seletores. Prestar atenção no tipo de declaração, para id - ultilize # antes de declarar e para class ultilize .  e para ultilizar os parametros do html puro somente repita o nome. Isso tudo para 
+usar o mesmo elemento aproveitando todos os seus paramentros */
+
+
+
+ .profile {
+    position: relative;
+    top: -75px;
+    text-align: center;
+ }
+    
+ 
+.profile__avatar {
+    width: 150px; 
+    height: 150px;
+    border-radius: 50%;
+    border: 6px solid white;
+    box-shadow: 0 4px 4px #0044;
+  
+}
+
+.profile__copy {
+    margin: 16px auto;
+   max-width: 75ch;
+   font-style: italic;
+}
+
+.profile__social, .footer__social {
+
+    display: grid;
+    grid-auto-flow: column;
+    gap: 16px;
+    margin: 0 auto;
+    padding: 0;
+    width: fit-content;
+    list-style: none;
+    color: var(--color-blues);
+}
+
+.footer {
+
+position: fixed;
+bottom: 0;
+width: 100vw;
+padding: 16px;
+background: black;
+color: #fff;
+display: grid;
+grid-template-columns: auto auto;
+align-items: center;
+
+}
+
+.footer__social {
+
+    margin: 0%;
+    justify-self: end;
+
+}
